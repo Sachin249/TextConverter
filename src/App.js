@@ -45,8 +45,9 @@ function App() {
     <BrowserRouter>
       <Navbar title="TextUtils" about="About" mode={mode} togglemode={togglemode}/>
       <Alert alert={alert}/>
+      {/* <TextForm Heading="Try Textutils : Word Counter,Character Counter,Remove Extra Spaces." mode={mode} showAlert={showAlert}/> */}
       <Routes>
-        <Route path="/" element={<TextForm Heading="Try Textutils : Word Counter,Character Counter,Remove Extra Spaces." mode={mode} showAlert={showAlert}/>} />
+        <Route path="/TextConverter" element={<TextForm Heading="Try Textutils : Word Counter,Character Counter,Remove Extra Spaces." mode={mode} showAlert={showAlert}/>} />
         <Route exact path="/about" element={<About mode={mode}/>}/>
       </Routes>
     </BrowserRouter>  
